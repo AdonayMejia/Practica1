@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/verde">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Luxor"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:background="@color/verde2"
+        android:textColor="@color/white">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="600dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:background="@drawable/sheraton">
+
+    </ImageView>
+   </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Principal"
+        android:background="@drawable/item_shape"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:text="@string/description"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:id="@+id/descripcion"
+            android:textSize="18dp"></TextView>
+        <Button
+            android:id="@+id/btnsheraton"
+            android:background="@color/verde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descripcion"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ir al sitio web"></Button>
+
+        <Button
+            android:id="@+id/btn_form"
+            android:background="@color/verde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnsheraton"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Reservar habitacion"></Button>
+    </RelativeLayout>
+</RelativeLayout>

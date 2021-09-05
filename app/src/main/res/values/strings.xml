@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GuiaPractica1</string>
+    <string name="description">Es un complejo hotelero de cinco estrellas, con magníficas vistas del Nilo. Tiene dos
+piscinas y una climatizada. Los precios de una habitación doble varían entre 50 y 100
+dólares.</string>
+    <string name="Luxor">Luxor Sheraton Hotel</string>
+</resources>
